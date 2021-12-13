@@ -1,0 +1,79 @@
+@import url('https://fonts.goog/leapis.com/css2?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+span {
+  display: flex;
+}
+
+#time {
+  display: flex;
+  color: #fff;
+  font-size: 30rem;
+}
+
+#ampm {
+  color: #fff;
+  align-self: center;
+  font-size: 5rem;
+}
+
+@media (max-width: 1450px) {
+  #time {
+    font-size: 25rem;
+  }
+
+  #ampm {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #time {
+    font-size: 20rem;
+  }
+
+  #ampm {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #time {
+    font-size: 15rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #time {
+    font-size: 10rem;
+  }
+
+  #ampm {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #time {
+    font-size: 5rem;
+  }
+
+  #ampm {
+    font-size: 1rem;
+  }
+}
