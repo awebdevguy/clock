@@ -17,5 +17,5 @@ function DisplayTime() {
 };
 
 setInterval(() => {
-  DisplayCurrentTime();
+  DisplayTime();
 }, 1000);
