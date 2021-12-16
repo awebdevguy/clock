@@ -1,11 +1,23 @@
 @import url('https://fonts.goog/leapis.com/css2?family=Muli&display=swap');
 
+:root {
+  --background-color: #000;
+  --color: #fff;
+}
+
+html.light {
+  --background-color: #fff;
+  --color: #000;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #000;
+  background-color: var(--background-color);
   font-family: 'Muli', sans-serif;
   display: flex;
   flex-direction: column;
@@ -22,23 +34,24 @@ span {
 
 #time {
   display: flex;
-  color: #fff;
-  font-size: 30rem;
+  color: var(--color);
+  font-size: 36rem;
 }
 
 #ampm {
-  color: #fff;
+  /* color: var(--color); */
+  color: indianred;
   align-self: center;
-  font-size: 5rem;
+  font-size: 11rem;
 }
 
 @media (max-width: 1450px) {
   #time {
-    font-size: 25rem;
+    font-size: 30rem;
   }
 
   #ampm {
-    font-size: 3rem;
+    font-size: 9rem;
   }
 }
 
@@ -48,32 +61,36 @@ span {
   }
 
   #ampm {
-    font-size: 2rem;
+    font-size: 8rem;
   }
 }
 
 @media (max-width: 900px) {
   #time {
-    font-size: 15rem;
+    font-size: 16rem;
+  }
+
+  #ampm {
+    font-size: 6rem;
   }
 }
 
 @media (max-width: 700px) {
   #time {
-    font-size: 10rem;
+    font-size: 11rem;
   }
 
   #ampm {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 450px) {
   #time {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   #ampm {
-    font-size: 1rem;
+    font-size: 3rem;
   }
 }
