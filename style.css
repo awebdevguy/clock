@@ -35,39 +35,29 @@ span {
 #time {
   display: flex;
   color: var(--color);
-  font-size: 36rem;
+  font-size: 30rem;
 }
 
 #ampm {
   /* color: var(--color); */
   color: indianred;
   align-self: center;
-  font-size: 11rem;
+  font-size: 9rem;
 }
 
 @media (max-width: 1450px) {
   #time {
-    font-size: 30rem;
+    font-size: 25rem;
   }
 
   #ampm {
-    font-size: 9rem;
+    font-size: 7rem;
   }
 }
 
 @media (max-width: 1200px) {
   #time {
-    font-size: 20rem;
-  }
-
-  #ampm {
-    font-size: 8rem;
-  }
-}
-
-@media (max-width: 900px) {
-  #time {
-    font-size: 16rem;
+    font-size: 18rem;
   }
 
   #ampm {
@@ -75,9 +65,19 @@ span {
   }
 }
 
+@media (max-width: 900px) {
+  #time {
+    font-size: 14rem;
+  }
+
+  #ampm {
+    font-size: 5rem;
+  }
+}
+
 @media (max-width: 700px) {
   #time {
-    font-size: 11rem;
+    font-size: 9rem;
   }
 
   #ampm {
@@ -87,10 +87,10 @@ span {
 
 @media (max-width: 450px) {
   #time {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   #ampm {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }

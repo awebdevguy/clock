@@ -15,7 +15,7 @@ function displayTime() {
   let date = new Date();
   let hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
   let amPM = date.getHours() >= 12 ? "PM" : "AM";
-  // hours = hours < 10 ? "0" + hours : hours;
+  // hours = hours < 10 ? "1" + hours : hours;
   let minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
   // let seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
   // systemTime = hours + ":" + minutes + ":" + seconds;
