@@ -32,6 +32,13 @@ span {
   display: flex;
 }
 
+span#supp {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
 #time {
   display: flex;
   color: var(--color);
@@ -39,10 +46,17 @@ span {
 }
 
 #ampm {
-  /* color: var(--color); */
   color: indianred;
   align-self: center;
   font-size: 9rem;
+  margin: 0;
+}
+
+#seconds {
+  color: var(--color);
+  font-size: 9rem;
+  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 1450px) {
@@ -50,7 +64,7 @@ span {
     font-size: 25rem;
   }
 
-  #ampm {
+  #ampm, #seconds {
     font-size: 7rem;
   }
 }
@@ -60,7 +74,7 @@ span {
     font-size: 18rem;
   }
 
-  #ampm {
+  #ampm, #seconds {
     font-size: 6rem;
   }
 }
@@ -70,7 +84,7 @@ span {
     font-size: 14rem;
   }
 
-  #ampm {
+  #ampm, #seconds {
     font-size: 5rem;
   }
 }
@@ -80,7 +94,7 @@ span {
     font-size: 9rem;
   }
 
-  #ampm {
+  #ampm, #seconds {
     font-size: 3rem;
   }
 }
@@ -90,7 +104,7 @@ span {
     font-size: 5rem;
   }
 
-  #ampm {
+  #ampm, #seconds {
     font-size: 2rem;
   }
 }

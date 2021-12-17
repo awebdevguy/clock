@@ -1,5 +1,6 @@
 const time = document.getElementById('time');
 const ampm = document.getElementById('ampm');
+const secondsElement = document.getElementById('seconds');
 
 window.onload = function () {
   displayTime();
@@ -17,11 +18,12 @@ function displayTime() {
   let amPM = date.getHours() >= 12 ? "PM" : "AM";
   // hours = hours < 10 ? "1" + hours : hours;
   let minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-  // let seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+  let seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
   // systemTime = hours + ":" + minutes + ":" + seconds;
   systemTime = hours + ":" + minutes;
   time.innerHTML = systemTime;
   ampm.innerHTML = amPM;
+  secondsElement.innerHTML = seconds;
 };
 
 setInterval(() => {
